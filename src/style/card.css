@@ -1,0 +1,39 @@
+.Card__Section {
+  @apply h-auto my-16;
+}
+
+.main__Container {
+  @apply flex items-center gap-8 gap-y-20   justify-center flex-wrap;
+}
+
+.Card {
+  @apply relative w-[350px] h-[500px] rounded-[50px] bg-[#fff1e06e] flex flex-col gap-8 justify-center items-center;
+}
+.Card__img {
+  @apply rounded w-[202px] h-[191px] absolute -top-[100px] left-[75px];
+}
+.Card__head {
+  @apply text-4xl uppercase font-bold;
+}
+
+.Card__para {
+  @apply text-base text-center mx-8;
+}
+
+@media (max-width: 992px) {
+  .main__Container {
+    @apply gap-y-32;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__Container {
+    @apply gap-y-28;
+  }
+  .Card__Section {
+    @apply h-auto;
+  }
+  .Card {
+    @apply rounded-[30px];
+  }
+}

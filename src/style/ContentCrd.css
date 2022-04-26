@@ -1,0 +1,9 @@
+.Content {
+  @apply bg-[#fff1e06e] rounded-xl flex  justify-around h-[268px] w-[1180px] items-center;
+}
+
+@media (max-width: 768px) {
+  .Content {
+    @apply flex flex-col items-center w-[350px];
+  }
+}

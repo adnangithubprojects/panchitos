@@ -1,0 +1,41 @@
+nav {
+  @apply relative flex flex-row justify-between items-center border-b-[1px] h-24 text-white px-4;
+}
+
+.menu {
+  @apply flex gap-8 capitalize  text-xl mr-12;
+}
+
+.Logo {
+  @apply flex w-full justify-between items-center;
+}
+.Icon__container {
+  @apply hidden;
+}
+
+.Logo__container img {
+  animation: pulse 0.8s alternate infinite;
+  @apply cursor-pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    @apply flex-col bg-[#4e3e29ab] items-center  h-80 w-full absolute top-24 left-0 z-50;
+  }
+
+  .Icon__container {
+    @apply flex bg-slate-400 p-1 rounded-md text-3xl;
+  }
+  .menu.active {
+    left: -100%;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(15deg);
+  }
+}
